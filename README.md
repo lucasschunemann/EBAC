@@ -6,38 +6,6 @@ Bem-vindo(a) ao meu repositório de entregas e atividades da [Escola Britânica 
 
 Este repositório é o meu cantinho de aprendizado, onde centralizo todas as entregas e atividades. Abaixo, você encontrará uma lista organizada dos módulos e suas respectivas atividades.
 
-## 🗂 Estrutura do Repositório
-
-📂 EBAC-Entregas
-├── 📁 Modulo-1
-│ ├── 📄 Atividade-1.md
-│ ├── 📄 Atividade-2.md
-├── 📁 Modulo-2
-│ ├── 📄 Atividade-1.md
-│ ├── 📄 Atividade-2.md
-│ └── 📄 Projeto-Final.md
-├── 📁 Modulo-3
-│ ├── 📄 Atividade-1.md
-│ ├── 📄 Atividade-2.md
-│ └── 📄 Projeto-Final.md
-└── 📄 README.md
-
-## 🔍 Módulos e Atividades
-
-### 📘 Módulo 1: Introdução
-- [Atividade 1](./Modulo-1/Atividade-1.md)
-- [Atividade 2](./Modulo-1/Atividade-2.md)
-
-### 📗 Módulo 2: Fundamentos
-- [Atividade 1](./Modulo-2/Atividade-1.md)
-- [Atividade 2](./Modulo-2/Atividade-2.md)
-- [Projeto Final](./Modulo-2/Projeto-Final.md)
-
-### 📙 Módulo 3: Avançado
-- [Atividade 1](./Modulo-3/Atividade-1.md)
-- [Atividade 2](./Modulo-3/Atividade-2.md)
-- [Projeto Final](./Modulo-3/Projeto-Final.md)
-
 ## 🚀 Como Usar
 
 1. Clone este repositório:
@@ -55,4 +23,4 @@ Adoraria receber feedbacks e sugestões! Se você encontrou algum erro ou tem id
 
 ---
 
-Feito com ❤️ por [Lucas Von](https://github.com/lucasschunemann)
+Feito com ☕ por [Lucas Von](https://github.com/lucasschunemann)
