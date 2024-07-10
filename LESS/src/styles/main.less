@@ -1,0 +1,107 @@
+// Importando o arquivo maps.less
+@import 'maps.less';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: @fontFamily;
+}
+
+body {
+  background-color: extract(@colors, bodyBg);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: @containerMaxWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: extract(@colors, headerBg);
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @containerPadding 0;
+  }
+}
+
+.menu {
+  display: flex;
+
+  li {
+    font-weight: bold;
+    margin-left: 24px;
+
+    a {
+      color: extract(@colors, menuText);
+      text-decoration: none;
+    }
+  }
+}
+
+section {
+  padding: 56px 0;
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: @gridColumnGap;
+  row-gap: @gridRowGap;
+  width: 100%;
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: @productBorderRadius;
+  }
+}
+
+.product-button {
+  display: block;
+  background-color: extract(@colors, productButtonBg);
+  color: extract(@colors, menuText);
+  text-align: center;
+  padding: @productButtonPadding 0;
+  border-radius: @productButtonBorderRadius;
+  margin-top: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: extract(@colors, productButtonHoverBg);
+  }
+}
+
+@media screen and (max-width: @mediaMaxWidth1) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: @mediaMaxWidth2) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
