@@ -5,7 +5,7 @@
   font-family: 'Roboto, sans-serif';
 }
 body {
-  background-color: extract(, bodyBg);
+  background-color: #f5f6fa;
 }
 li {
   list-style: none;
@@ -16,16 +16,20 @@ li {
   margin: 0 auto;
 }
 header {
-  background-color: extract(, headerBg);
+  background-color: #182c61;
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+}
+header .branding img {
+  height: 40px;
 }
 .menu {
   display: flex;
@@ -35,11 +39,20 @@ header .container {
   margin-left: 24px;
 }
 .menu li a {
-  color: extract(, menuText);
+  color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #fff;
 }
 section {
   padding: 56px 0;
+}
+section h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .products {
   margin-top: 40px;
@@ -49,22 +62,44 @@ section {
   row-gap: 4%;
   width: 100%;
 }
-.product-item img {
+.products .product-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.products .product-item:hover {
+  transform: translateY(-5px);
+}
+.products .product-item img {
   width: 100%;
   border-radius: 16px;
+  margin-bottom: 16px;
 }
-.product-button {
+.products .product-item h4 {
+  font-size: 1.25em;
+  margin-bottom: 8px;
+}
+.products .product-item p {
+  font-size: 0.9em;
+  margin-bottom: 16px;
+  color: #666;
+}
+.products .product-item .product-button {
   display: block;
-  background-color: extract(, productButtonBg);
-  color: extract(, menuText);
+  background-color: #44bd32;
+  color: #fff;
   text-align: center;
   padding: 8px 0;
   border-radius: 8px;
   margin-top: 8px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
-.product-button:hover {
-  background-color: extract(, productButtonHoverBg);
+.products .product-item .product-button:hover {
+  background-color: #4cd137;
 }
 @media screen and (max-width: 1023px) {
   .container {
