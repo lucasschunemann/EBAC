@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       let numeroRandom = Math.floor(Math.random() * numeroMax) + 1; // Gera um número inteiro entre 1 e numeroMax
-      alert(numeroRandom);
+      document.getElementById("result-valor").innerText = numeroRandom;
     });
 });
