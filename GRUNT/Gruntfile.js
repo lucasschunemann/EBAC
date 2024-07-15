@@ -36,7 +36,7 @@ module.exports = function (grunt) {
             },
             {
               match: "ENDERECO_DO_JS",
-              replacement: "../src/scripts/main.js",
+              replacement: "../src/scripts/main.js", // Verifique o caminho
             },
           ],
           prefix: "@@", // Adiciona o prefixo correto
