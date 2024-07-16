@@ -59,10 +59,10 @@ module.exports = function (grunt) {
             },
             {
               match: "ENDERECO_DO_JS",
-              replacement: "./scripts/main.js", // Certifique-se de que o caminho está correto
+              replacement: "./scripts/main.min.js",
             },
           ],
-          prefix: "@@", // Adiciona o prefixo correto
+          prefix: "@@",
         },
         files: [
           {
@@ -86,6 +86,13 @@ module.exports = function (grunt) {
       },
     },
     clean: ["temp"],
+    uglify: {
+      target: {
+        files: {
+          "dist/scripts/main.min.js": "src/scripts/main.js",
+        },
+      },
+    },
   });
 
   grunt.loadNpmTasks("grunt-contrib-less");
@@ -93,6 +100,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-replace");
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
   grunt.loadNpmTasks("grunt-contrib-clean");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
 
   grunt.registerTask("default", ["watch"]);
   grunt.registerTask("build", [
@@ -100,5 +108,6 @@ module.exports = function (grunt) {
     "htmlmin:dist",
     "replace:dist",
     "clean",
+    "uglify",
   ]);
 };
